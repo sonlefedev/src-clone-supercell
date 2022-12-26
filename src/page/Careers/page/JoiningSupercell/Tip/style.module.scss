@@ -1,0 +1,95 @@
+.wrapper {
+  padding: 88px 0 95px;
+  background-color: #f3f3f3;
+  .container {
+    margin: 0 auto;
+    > h2 {
+      line-height: 1.25;
+      text-align: center;
+      font-weight: bold;
+      @media (min-width: 1281px) {
+        font-size: 34px;
+      }
+      @media (min-width: 1050px) {
+        font-size: 26px;
+      }
+      @media (min-width: 790px) {
+        font-size: 22px;
+      }
+      font-size: 28px;
+    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .accordion {
+    padding-top: 32px;
+    @media (min-width: 1291px) {
+      width: calc((100% - 210px) / 8 * 6 + 150px);
+    }
+    @media (min-width: 1050px) {
+      width: calc((100% - 140px) / 8 * 6 + 100px);
+    }
+    @media (min-width: 790px) {
+      width: calc((100% - 140px) / 8 * 6 + 100px);
+    }
+    width: 90%;
+    ul {
+      li {
+        &.active {
+          .content {
+            h4 {
+              &::before {
+                display: none;
+              }
+            }
+            p {
+              font-size: 18px;
+              height: auto;
+            }
+          }
+        }
+        &:hover {
+          box-shadow: 0 20px 40px 0 hsl(0deg 0% 9% / 15%);
+        }
+        background-color: #fff;
+        padding: 0 4em 0 2em;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        cursor: pointer;
+        .content {
+          p {
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1.3) 0.8s;
+            font-size: 18px;
+            padding-bottom: 2em;
+            height: 0;
+            font-size: 0;
+          }
+          h4 {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #2d85f3;
+            padding-block: 1.5em;
+            position: relative;
+            &::after,
+            &::before {
+              content: "";
+              position: absolute;
+              right: -2em;
+              top: 2.5rem;
+              background: #2d85f3;
+              width: 12px;
+              height: 2px;
+            }
+            &::before {
+              rotate: 90deg;
+            }
+          }
+        }
+      }
+    }
+  }
+}

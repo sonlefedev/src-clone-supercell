@@ -1,0 +1,19 @@
+.wrapper {
+  .container {
+    padding: 90px 0 130px;
+    margin: 0 auto;
+
+    p {
+      margin: 0 auto;
+      @media (min-width: 1049px) {
+        width: 80%;
+      }
+      @media (max-width: 791px) {
+        width: 90%;
+      }
+      > a {
+        color: #2d85f3;
+      }
+    }
+  }
+}

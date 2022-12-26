@@ -1,0 +1,21 @@
+.wrapper {
+  .panel-img-br {
+    opacity: 0.3;
+  }
+  .wrapper-panel {
+    background-color: #000;
+    .heading-hero-panel {
+      @media (max-width: 768px) {
+        transform: translateY(0);
+      }
+    }
+  }
+  .link-cities-ul {
+    --space-column-gap: 30px;
+    .link-cities-img {
+      width: 100% !important;
+      max-width: 100% !important;
+      max-height: none !important;
+    }
+  }
+}

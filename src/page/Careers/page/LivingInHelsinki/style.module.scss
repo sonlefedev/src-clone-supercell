@@ -1,0 +1,10 @@
+.wrapper {
+  .wrapper-panel {
+    background-color: #000;
+    .heading-hero-panel {
+      @media (max-width: 768px) {
+        transform: translateY(0);
+      }
+    }
+  }
+}
