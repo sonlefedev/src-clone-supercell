@@ -17,35 +17,4 @@
             line-height: 1.1em;
         }
     }
-    > ul {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 2%;
-
-        @media (max-width: 789px) {
-            gap: 4%;
-        }
-
-        > li {
-            @media (max-width: 789px) {
-                flex-basis: calc((100% - 4%) / 2);
-                margin-bottom: 4%;
-            }
-            flex-basis: 32%;
-            margin-bottom: 2%;
-            a {
-                &,
-                img {
-                    width: 100%;
-                    display: block;
-                }
-                img {
-                    object-fit: contain;
-                }
-            }
-        }
-    }
 }
