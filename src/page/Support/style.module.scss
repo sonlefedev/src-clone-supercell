@@ -1,0 +1,7 @@
+.wrapper {
+    .panel-hero-heading {
+        @media (max-width: 768px) {
+            transform: translateY(-25%);
+        }
+    }
+}

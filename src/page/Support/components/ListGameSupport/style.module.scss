@@ -1,0 +1,51 @@
+.wrapper {
+    padding: 80px 0 120px;
+    margin: 0 auto;
+    @media (max-width: 789px) {
+        width: 90% !important;
+    }
+    > h3 {
+        font-weight: 600;
+        line-height: 1.25;
+        font-size: 18px;
+        margin: 21px 0;
+        @media (min-width: 1281px) {
+            font-size: 21px;
+        }
+        @media (max-width: 789px) {
+            text-align: center;
+            line-height: 1.1em;
+        }
+    }
+    > ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 2%;
+
+        @media (max-width: 789px) {
+            gap: 4%;
+        }
+
+        > li {
+            @media (max-width: 789px) {
+                flex-basis: calc((100% - 4%) / 2);
+                margin-bottom: 4%;
+            }
+            flex-basis: 32%;
+            margin-bottom: 2%;
+            a {
+                &,
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

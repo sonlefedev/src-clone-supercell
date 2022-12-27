@@ -11,6 +11,7 @@ import Home from "../page/Home";
 import routesGames from "./style/listGame/routesGames";
 import LivingInHelsinki from "../page/Careers/page/LivingInHelsinki";
 import LivingInShanghai from "../page/Careers/page/LivingInShanghai";
+import Support from "../page/Support";
 
 type TProps = {};
 
@@ -42,6 +43,12 @@ const routes = [
     id: v4(),
     path: "/careers/living-in-shanghai",
     element: <LivingInShanghai />,
+  },
+
+  {
+    id: v4(),
+    path: "/support",
+    element: <Support />,
   },
 ];
 

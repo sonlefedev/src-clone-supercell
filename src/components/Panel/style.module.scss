@@ -51,9 +51,9 @@
         transform: none;
       }
       @media (max-width: 1024px) {
-        object-fit: inherit;
+        object-fit: cover;
         height: 100%;
-        width: auto;
+        width: 100%;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 0);
