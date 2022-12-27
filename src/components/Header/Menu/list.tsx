@@ -1,4 +1,3 @@
-import { v4 } from "uuid";
 
 export interface nav {
   link?: string;

@@ -32,7 +32,7 @@
         background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
         .margin {
           display: flex;
-          justify-content: end;
+          justify-content: flex-end;
           flex-direction: column;
           margin: 0 25px;
           height: 100%;

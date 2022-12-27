@@ -1,6 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io";
 import classNames from "classnames/bind";
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useRef } from "react";
 import listNav, { nav } from "./list";
 import style from "./style.module.scss";
 import RouteActiveStore from "../../../routes/RouteActiveStore";

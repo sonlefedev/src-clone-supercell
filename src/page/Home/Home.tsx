@@ -18,7 +18,7 @@ const Home = (props: Props) => {
       <div className={cx("home-page")}>
         <Panel
           heroHeading={{
-            des: "Makers of Hay Day, Clash of Clans, Boom Beach, Clash Royale and Brawl Stars.",
+            des: "Makers of Hay Day, Clash of Clans, Boom Beach, Clash Royale and Brawl Stars. test",
           }}
         />
         <News />

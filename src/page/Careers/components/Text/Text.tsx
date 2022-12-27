@@ -1,6 +1,5 @@
 import classNames from "classnames/bind";
 import style from "./style.module.scss";
-import { Link } from "react-router-dom";
 
 type Props = {
   JSXContent: JSX.Element;

@@ -10,7 +10,7 @@ type Props = {
 const cx = classNames.bind(style);
 const FullScreenThree = (props: Props) => {
   const { data } = props;
-  const { top, bottom, id } = data;
+  const { top, bottom } = data;
   return (
     <div className={cx("wrapper")}>
       <div className={cx("container", "shrink_web", "shrink_mobile")}>

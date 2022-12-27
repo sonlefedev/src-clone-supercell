@@ -1,7 +1,5 @@
-import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
 import Button from "../../../../../../../components/common/Button";
-import style from "../../style.module.scss";
 import TableJoinStore from "../../TableJoinStore";
 import { useCallback } from "react";
 
@@ -16,8 +14,6 @@ export interface IDataTBody {
 type Props = {
   data: IDataTBody[];
 };
-const cx = classNames.bind(style);
-
 const Tbody = (props: Props) => {
   const { stringActive } = TableJoinStore();
 
