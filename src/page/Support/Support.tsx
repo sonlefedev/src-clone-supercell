@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import Panel from "../../components/Panel";
 import ListGameSupport from "./components/ListGameSupport";
 import SafeguardYourGame from "./components/SafeguardYourGame";
+import SeeAlso from "./components/SeeAlso";
 
 type Props = {};
 const cx = classNames.bind(style);
@@ -29,6 +30,7 @@ const Support = (props: Props) => {
                 />
                 <ListGameSupport />
                 <SafeguardYourGame />
+                <SeeAlso />
             </div>
             <Footer />
         </>
