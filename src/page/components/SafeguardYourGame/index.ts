@@ -1,3 +1,3 @@
 import SafeguardYourGame from "./SafeguardYourGame";
 
-export default SafeguardYourGame
+export default SafeguardYourGame;

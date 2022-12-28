@@ -1,3 +1,3 @@
 import SeeAlso from "./SeeAlso";
 
-export default SeeAlso
+export default SeeAlso;

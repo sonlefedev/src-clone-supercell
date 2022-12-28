@@ -25,7 +25,7 @@
         }
         &:nth-child(3).open-sub {
           > .sub {
-            height: 53.25px;
+            height: calc(53.25px * 2);
           }
         }
         &:nth-child(4).open-sub {

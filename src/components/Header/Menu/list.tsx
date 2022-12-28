@@ -1,4 +1,3 @@
-
 export interface nav {
   link?: string;
   text: string;
@@ -94,8 +93,8 @@ const listNav: nav[] = [
         text: "Support",
       },
       {
-        id: `idSupportSPF`,
-        link: "/support/safe-play-fair",
+        id: `idSupportSFP`,
+        link: "/safe-fair-play",
         text: "Be Safe & Play Fair",
       },
     ],

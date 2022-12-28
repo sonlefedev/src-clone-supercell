@@ -1,0 +1,114 @@
+.wrapper {
+  .hero-heading-safeFairPlay {
+    @media (max-width: 768px) {
+      transform: translateY(-25%);
+    }
+  }
+  .br-panel {
+    background-color: #000;
+  }
+
+  .ulOurResources {
+    @media (max-width: 789px) {
+      --size-gap: 4%;
+    }
+
+    --size-gap: 2%;
+    --column: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: var(--size-gap);
+
+    @media (max-width: 789px) {
+      --column: 1;
+    }
+
+    > li {
+      // aspect-ratio: 4/3;
+      flex-basis: calc(
+        (100% - var(--size-gap) * (var(--column) - 1)) / var(--column)
+      );
+      margin-bottom: var(--size-gap);
+
+      @media (max-width: 789px) {
+        height: 373px;
+      }
+      @media (min-width: 790px) {
+        height: 241px;
+      }
+      @media (min-width: 1050px) {
+        height: 365px;
+      }
+      @media (min-width: 1281px) {
+        height: 428px;
+      }
+      a {
+        height: 100%;
+        display: flex;
+        position: relative;
+
+        background: linear-gradient(0deg, #27abff, #036de1);
+        .content-OurResources {
+          padding-top: 54px;
+          color: #fff;
+          z-index: 1;
+          position: relative;
+          span,
+          h4 {
+            width: 100%;
+            text-align: center;
+          }
+          span {
+            text-transform: uppercase;
+            font-weight: bold;
+            display: block;
+            font-size: 17px;
+          }
+          h4 {
+            text-transform: uppercase;
+            font-size: 24px;
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+          }
+        }
+        &,
+        img {
+          width: 100%;
+          display: block;
+        }
+        img {
+          z-index: 0;
+          position: absolute;
+          object-fit: contain;
+          height: 245px;
+          width: auto;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          aspect-ratio: auto 3300 / 3300;
+          @media (min-width: 790px) {
+            height: 120px;
+          }
+          @media (min-width: 1050px) {
+            height: 240px;
+          }
+          @media (min-width: 1281px) {
+            height: 287px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        img {
+          bottom: -2.8%;
+        }
+      }
+    }
+
+    //
+  }
+}

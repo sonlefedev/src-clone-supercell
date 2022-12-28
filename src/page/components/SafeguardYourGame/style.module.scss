@@ -1,0 +1,41 @@
+.wrapper {
+  --br-img: ;
+  position: relative;
+  height: 75vw;
+  background-image: var(--br-img);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @media (min-width: 790px) {
+    height: 480px;
+  }
+  @media (min-width: 1050px) {
+    height: 570px;
+  }
+  @media (min-width: 1281px) {
+    height: 778px;
+  }
+  width: 100%;
+  a {
+    --size: 100px;
+    @media (min-width: 790px) {
+      --size: 96px;
+    }
+    @media (min-width: 1050px) {
+      --size: 112px;
+    }
+    @media (min-width: 1281px) {
+      --size: 128px;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--size);
+    height: var(--size);
+    background-image: url("../../../access/image/logo/btn_play_video.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

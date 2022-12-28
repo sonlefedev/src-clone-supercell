@@ -5,7 +5,6 @@ import Content from "./components/Content";
 type Props = {};
 const cx = classNames.bind(style);
 const ForWeb = (props: Props) => {
-
   return (
     <div className={cx("wrapper")}>
       <div className={cx("container", "shrink_web", "shrink_mobile")}>
