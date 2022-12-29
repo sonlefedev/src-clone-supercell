@@ -99,32 +99,32 @@ const listNav: nav[] = [
       },
     ],
   },
-  {
-    id: `idAboutUs`,
-    text: "About Us",
-    children: [
-      {
-        link: "/about-us",
-        id: `idAboutUs_`,
-        text: "About Us",
-      },
-      {
-        id: `idAboutUsN`,
-        link: "/about-us/news",
-        text: "News",
-      },
-      {
-        id: `idAboutUsI`,
-        link: "/about-us/investments",
-        text: "Investments",
-      },
-      {
-        id: `idAboutUsLU`,
-        link: "/about-us/level-up",
-        text: "Level Up",
-      },
-    ],
-  },
+  // {
+  //   id: `idAboutUs`,
+  //   text: "About Us",
+  //   children: [
+  //     {
+  //       link: "/about-us",
+  //       id: `idAboutUs_`,
+  //       text: "About Us",
+  //     },
+  //     {
+  //       id: `idAboutUsN`,
+  //       link: "/about-us/news",
+  //       text: "News",
+  //     },
+  //     {
+  //       id: `idAboutUsI`,
+  //       link: "/about-us/investments",
+  //       text: "Investments",
+  //     },
+  //     {
+  //       id: `idAboutUsLU`,
+  //       link: "/about-us/level-up",
+  //       text: "Level Up",
+  //     },
+  //   ],
+  // },
 ];
 
 export default listNav;
